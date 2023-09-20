@@ -38,10 +38,12 @@ for (j = 0; j < data[0].length; j++) {
 for (k = 0; k < data[0][0].length; k++) {
 data2[i][j][k] = data[i][j][k] / d -
 Math.pow(limit[i][j], 2.0);
+
 //The average method was called twice-2110170
 double avg = average(data2[i][j]); 
 if (avg > 10 && avg < 50)
 break;
+
 else if (Math.max(data[i][j][k], data2[i][j][k]) >
 data[i][j][k])
 break;
