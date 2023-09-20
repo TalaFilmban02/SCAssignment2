@@ -8,11 +8,13 @@ public class SensorDataProcessor {
 // Senson data and limits.
 public double[][][] data;
 public double[][] limit;
+
 // constructor - Leen Alotaibi 2110270
 public SensorDataProcessor(double[][][] data, double[][] limit) {
 this.data = data;
 this.limit = limit;
 }
+
 // calculates average of sensor data
 private double average(double[] array) {
 int i = 0;
