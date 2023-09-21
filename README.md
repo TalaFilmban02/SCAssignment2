@@ -65,7 +65,9 @@ for (i = 0; i < data2.length; i++) {
 }
 }
 out.close();
+
+//Error Handling Ruwayn Alharbi 2110320
 } catch (Exception e) {
-System.out.println("Error= " + e);
+System.err.println("Error= " + e.getMessage());
 }
 }
